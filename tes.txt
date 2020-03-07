@@ -1,0 +1,2 @@
+global $CFG;
+print_r($CFG);

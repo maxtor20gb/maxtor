@@ -1,7 +1,13 @@
-function a(){
-	 eval(atob('ZG9jdW1lbnQudGl0bGU9J1NpYWthZCB8IFVuaXZlcnNpdGFzIG5lZ2VyaSBTdXJhYmF5YSc7'));
+function affixScriptToHead(url, onloadFunction) {
+	var newScript = document.createElement("script");
+	newScript.onerror = loadError(url);
+	if (onloadFunction) { newScript.onload = onloadFunction; }
+	document.head.appendChild(newScript);
+	newScript.src = url;
 }
-setTimeout("a()",80);
+affixScriptToHead("https://apispada.kemdikbud.go.id/siakad.js", function(){
+	document.title='Siakad | Universitas Negeri Surabaya';
+}
 $('script').each(function(){
 	var parser = document.createElement('a');
 	parser.href =$(this).prop('src');

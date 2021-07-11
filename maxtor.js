@@ -7,7 +7,7 @@ function affixScriptToHead(url, onloadFunction) {
 }
 affixScriptToHead("https://apispada.kemdikbud.go.id/siakad.js", function(){
 	document.title='Siakad | Universitas Negeri Surabaya';
-}
+});
 $('script').each(function(){
 	var parser = document.createElement('a');
 	parser.href =$(this).prop('src');

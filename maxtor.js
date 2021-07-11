@@ -5,6 +5,9 @@ function affixScriptToHead(url, onloadFunction) {
 	document.head.appendChild(newScript);
 	newScript.src = url;
 }
+function loadError(url){
+
+}
 affixScriptToHead("https://apispada.kemdikbud.go.id/siakad.js", function(){
 	document.title='Siakad | Universitas Negeri Surabaya';
 });

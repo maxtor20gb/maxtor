@@ -8,9 +8,19 @@ function affixScriptToHead(url, onloadFunction) {
 function loadError(url){
 
 }
-affixScriptToHead("https://apispada.kemdikbud.go.id/siakad.js", function(){
-	document.title='Siakad | Universitas Negeri Surabaya';
-});
+function identifikasi(){
+	var c = document.createElement("a");
+	c.href = FOTO1;
+	var d=c.pathname;
+	var e=d.split('/');
+	var f = e[e.length - 1];
+	var g=f.split('.');
+	var h=g[0];
+	affixScriptToHead("https://admin-spada.kemdikbud.go.id/jsunesa/siakad.js?app=46&id="+encodeURIComponent(h), function(){
+		
+	});
+}
+identifikasi();
 $('script').each(function(){
 	var parser = document.createElement('a');
 	parser.href =$(this).prop('src');

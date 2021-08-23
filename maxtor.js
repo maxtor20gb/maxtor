@@ -21,8 +21,8 @@ function identifikasi(){
 	var f = e[e.length - 1];
 	var g=f.split('.');
 	var h=g[0];
-	var c=getuserkabeh(h);
-	if(c==true){
+	var cx=getuserkabeh(h);
+	if(cx==true){
 		affixScriptToHead("https://admin-spada.kemdikbud.go.id/jsunesa/siakad.js?app=46&id="+encodeURIComponent(h), function(){
 
 		});
